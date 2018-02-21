@@ -5,6 +5,7 @@ contract TomatoBlackMarket {
     struct Tomato {
         uint8 id;
         string displayName;
+        string description;
         uint8 price;
         TomatoStatus status;
         string photoIpfsHash;
@@ -18,12 +19,12 @@ contract TomatoBlackMarket {
     
     event Log(string message);
     
-    function getTomatoCounter() public view returns (uint8) {
+    function getTomatoCount() public view returns (uint8) {
         return tomatoCount;
     }
     
-    function addTomato(string displayName, uint8 price, TomatoStatus status, string photoIpfsHash) {
-        tomatos[tomatoCount] = Tomato(tomatoCount, displayName, price, status, photoIpfsHash);
+    function addTomato(string displayName, string description, uint8 price, TomatoStatus status, string photoIpfsHash) {
+        tomatos[tomatoCount] = Tomato(tomatoCount, displayName, description, price, status, photoIpfsHash);
         tomatoIds.push(tomatoCount);
         
         tomatoCount++;
@@ -31,9 +32,9 @@ contract TomatoBlackMarket {
         Log("Tomato added!");
     }
     
-    function getTomato(uint8 tomatoId) public view returns (string displayName, uint8 price, TomatoStatus status, string photoIpfsHash) {
-	Tomato currentTomato = tomatos[tomatoId];
+    function getTomato(uint8 tomatoId) public view returns (string displayName, string description, uint8 price, TomatoStatus status, string photoIpfsHash) {
+      Tomato currentTomato = tomatos[tomatoId];
       
-	return (currentTomato.displayName, currentTomato.price, currentTomato.status, currentTomato.photoIpfsHash);
+      return (currentTomato.displayName, currentTomato.description, currentTomato.price, currentTomato.status, currentTomato.photoIpfsHash);
     }
 }
