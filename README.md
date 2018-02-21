@@ -17,12 +17,13 @@
 ## Running the dApp:
 
 1. Spin off your Ethereum test network by running `testrpc`
-2. Take the first private key from the list and use it in MetaMask wallet (make sure you're using private network on localhost)
-3. Deploy the contract to blockchain with Remix (https://remix.ethereum.org)
-4. Update the contract address in `/web/App.js`
-5. Go to `/web/` folder
-6. `npm install`
-7. `npm start`
+2. Switch your Ethereum network in MetaMask to localhost
+3. Take the first private key from the list and use it in MetaMask wallet (make sure you're using private network on localhost)
+4. Deploy the contract to blockchain with Remix (https://remix.ethereum.org)
+5. Update the contract address in `/web/App.js`
+6. Go to `/web/` folder
+7. `npm install`
+8. `npm start`
 
 ### Listing tomatos
 
