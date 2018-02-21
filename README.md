@@ -26,7 +26,7 @@
 
 ## Screenshots: 
 
-[logo]: https://github.com/bdjukic/react-ethereum-ipfs/blob/master/screenshots/tomato_list.png "Tomato list"
+![alt tag](https://github.com/bdjukic/react-ethereum-ipfs/blob/master/screenshots/tomato_list.png)
 
-[logo]: https://github.com/bdjukic/react-ethereum-ipfs/blob/master/screenshots/add_new_tomato.png "Adding new tomato"
+![alt tag](https://github.com/bdjukic/react-ethereum-ipfs/blob/master/screenshots/add_new_tomato.png)
 
