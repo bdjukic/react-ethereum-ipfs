@@ -83,7 +83,7 @@ class TomatoList extends Component {
     for (var i = 0; i < tomatos.length; i++) {
       tomatoItems.push(
         <GridTile
-          key={tomatos[i].img}
+          key={i}
           className="TomatoList"
           title={<b>{tomatos[i].displayName}</b>}
           subtitle={tomatos[i].description}
@@ -101,7 +101,7 @@ class TomatoList extends Component {
         <GridList
           cellHeight={200}
           style={styles.gridList}
-          cols={1}
+          cols={2}
         >
           {tomatoItems}
         </GridList>
