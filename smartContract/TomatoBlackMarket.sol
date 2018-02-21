@@ -32,9 +32,9 @@ contract TomatoBlackMarket {
         Log("Tomato added!");
     }
     
-    function getTomato(uint8 tomatoId) public view returns (string displayName, string description, uint8 price, TomatoStatus status, string photoIpfsHash) {
+    function getTomato(uint8 tomatoId) public view returns (string displayName, string description, uint8 price, string photoIpfsHash) {
       Tomato currentTomato = tomatos[tomatoId];
       
-      return (currentTomato.displayName, currentTomato.description, currentTomato.price, currentTomato.status, currentTomato.photoIpfsHash);
+      return (currentTomato.displayName, currentTomato.description, currentTomato.price, currentTomato.photoIpfsHash);
     }
 }
