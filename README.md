@@ -1,10 +1,11 @@
 ## Installation:
 
-1. Install Metamask wallet as a browser extension (https://metamask.io/)
+1. Install Metamask wallet as a browser extension: https://metamask.io/
 2. Install Node.js: https://nodejs.org/en/download/package-manager/
 3. Install React: https://reactjs.org/docs/installation.html#installing-react
 4. Install Material UI: https://www.npmjs.com/package/material-ui
 5. Install local Ethereum test network: https://www.npmjs.com/package/truffle-testrpc
+6. Install IPFS: https://github.com/ipfs/go-ipfs#install
 
 ## Running the dApp:
 
