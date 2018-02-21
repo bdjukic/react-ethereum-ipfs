@@ -45,7 +45,7 @@ class App extends Component {
     var contractAbi = window.web3.eth.contract(abi)
     
     window.signedInUser = window.web3.eth.accounts[0]
-    window.contract = contractAbi.at('0x9e7fc37369d5a008f4d867d93acbfa6644bad091')
+    window.contract = contractAbi.at('0x738a1f9a5e26ae437a8866d587f48dde0cc73505')
     
     window.contract.Log().watch(function(error, result) {
       if (!error) {
@@ -62,7 +62,7 @@ class App extends Component {
         <div className="App">
           <header className="App-header">
             <img src={logo} className="App-logo" alt="logo" />
-            <h1 className="App-title">Black Market for Tomatos</h1>
+            <h1 className="App-title">Black Market for Tomatoes</h1>
           </header>
           <TomatoToolbar />
           <br />
