@@ -7,6 +7,13 @@
 5. Install local Ethereum test network: https://www.npmjs.com/package/truffle-testrpc
 6. Install IPFS: https://github.com/ipfs/go-ipfs#install
 
+## Configure IPFS
+
+1. Run `ipfs init`
+1. `ipfs config --json API.HTTPHeaders.Access-Control-Allow-Origin '["*"]'` 
+2. `ipfs config --json Gateway.HTTPHeaders.Access-Control-Allow-Origin '["*"]'`
+3. Run `ipfs daemon`
+
 ## Running the dApp:
 
 1. Spin off your Ethereum test network by running `testrpc`
