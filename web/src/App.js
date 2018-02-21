@@ -47,12 +47,11 @@ class App extends Component {
     window.signedInUser = window.web3.eth.accounts[0]
     window.contract = contractAbi.at('0x9e7fc37369d5a008f4d867d93acbfa6644bad091')
     
-    var logEvent = window.contract.Log().watch(function(error, result) {
+    window.contract.Log().watch(function(error, result) {
       if (!error) {
-        alert("Test");
-        window.location.reload();
+        alert("Tomato added!");
       } else {
-        alert(error);
+        alert("Error while adding tomato: " + error);
       }
     });
   }
