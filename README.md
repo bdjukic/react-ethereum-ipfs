@@ -24,9 +24,11 @@
 6. `npm install`
 7. `npm start`
 
-## Screenshots: 
+### Listing tomatos
 
 ![alt tag](https://github.com/bdjukic/react-ethereum-ipfs/blob/master/screenshots/tomato_list.png)
+
+### Adding new tomatos
 
 ![alt tag](https://github.com/bdjukic/react-ethereum-ipfs/blob/master/screenshots/add_new_tomato.png)
 
