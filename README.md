@@ -20,6 +20,13 @@
 2. Take the first private key from the list and use it in MetaMask wallet (make sure you're using private network on localhost)
 3. Deploy the contract to blockchain with Remix (https://remix.ethereum.org)
 4. Update the contract address in `/web/App.js`
-2. Go to `/web/` folder
-3. `npm start`
+5. Go to `/web/` folder
+6. `npm install`
+7. `npm start`
+
+## Screenshots: 
+
+[logo]: https://github.com/bdjukic/react-ethereum-ipfs/blob/master/screenshots/tomato_list.png "Tomato list"
+
+[logo]: https://github.com/bdjukic/react-ethereum-ipfs/blob/master/screenshots/add_new_tomato.png "Adding new tomato"
 
