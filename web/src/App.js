@@ -12,10 +12,10 @@ class App extends Component {
     const ipfsScript = document.createElement("script");
     const fileBufferScript = document.createElement("script");
 
-    ipfsScript.src = "https://wzrd.in/standalone/buffer";
+    ipfsScript.src = "https://unpkg.com/ipfs-api/dist/index.js";
     ipfsScript.async = true;
 
-    fileBufferScript.src = "https://unpkg.com/ipfs-api/dist/index.js";
+    fileBufferScript.src = "https://wzrd.in/standalone/buffer";
     fileBufferScript.async = true;
 
     ipfsScript.addEventListener('load', function () {
@@ -45,7 +45,7 @@ class App extends Component {
     var contractAbi = window.web3.eth.contract(abi)
     
     window.signedInUser = window.web3.eth.accounts[0]
-    window.contract = contractAbi.at('0x738a1f9a5e26ae437a8866d587f48dde0cc73505')
+    window.contract = contractAbi.at('0x9e7fc37369d5a008f4d867d93acbfa6644bad091')
     
     window.contract.Log().watch(function(error, result) {
       if (!error) {
